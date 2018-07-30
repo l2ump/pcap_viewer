@@ -40,8 +40,7 @@ int main(int argc, char* argv[]) {
 
     u_int size_ip;
     u_short size_tcp;
-    
-    if (res == 0) continue;
+    +
     if (res == -1 || res == -2) break;
     printf("%u bytes captured\n", header->caplen);
 
